@@ -1,20 +1,53 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-    <title></title>
-</head>
+
+<style>
+
+    input {
+        
+        border-radius: 22px;
+        border-color: rgba(0, 0, 0, 0.087);
+        border-width: 1px;
+        line-height: 3em;
+
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    input {
+        display: block;
+        margin: 25px auto;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        border-radius: 5px;
+        line-height: 2em;
+        border: none;
+        margin: 0 5px;
+        padding: 5px 17px;
+        color: rgb(0, 0, 0, 0.5);
+    }
+</style>     
 
 <body>
    <div>
     <img src="googlelogo_color.png">
    </div> 
 
-    <div>  <input type="search" required> </div>
+    <div>  <input type="search" size=65 title="Search" required> </div>
     
-        <div> 
-            <button type="search">Google Search</button>
-            <button type="firstresult">I'm Feeling Lucky</button> 
+        <div class="buttons"> 
+            <button type="search" id="searchbutton">Google Search</button>
+            <button type="firstresult" id="luckybutton">I'm Feeling Lucky</button> 
         </div>
     
 
