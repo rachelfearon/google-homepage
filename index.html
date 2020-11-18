@@ -15,32 +15,68 @@
 
     .logo {
         display: flex;
-        justify-content: center;
-    }
-
-    .buttons {
-        display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
     }
 
     button {
-        border-radius: 5px;
-        line-height: 2em;
-        border: none;
-        margin: 0 5px;
-        padding: 5px 17px;
-        color: rgb(0, 0, 0, 0.5);
+    display: inline-block;
+    border: none;
+    border-radius: 3px;
+    padding: 0.6rem 1rem;
+    margin: 0 7px;
+    text-decoration: none;
+    background: rgb(238, 238, 238);
+    color: rgba(0, 0, 0, 0.582);
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+    .searchbuttons {
+        display: flex;
+    }
+
+    .b-center {
+        justify-content: center;
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        font-size: 14px;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.822);
     }
 </style>     
 
 <body>
+
+<ul>
+    <li><a href="about.asp">About</a></li>
+    <li><a href="shop.asp">Shop</a></li>
+    <li><a href="gmail.asp">Gmail</a></li>
+    <li><a href="images.asp">Images</a></li>
+    <li><a href="drive.asp">#</a></li>
+    <li><a href="signin"><button type="signin" id="signin" style="background: rgb(77, 128, 236); color: white; font-weight: bold;">Sign In</button></a></li>
+</ul>
+
    <div class="logo">
     <img src="googlelogo_color.png">
    </div> 
 
     <div>  <input type="search" size=65 title="Search" required> </div>
     
-        <div class="buttons"> 
+        <div class="searchbuttons b-center"> 
             <button type="search" id="searchbutton">Google Search</button>
             <button type="firstresult" id="luckybutton">I'm Feeling Lucky</button> 
         </div>
