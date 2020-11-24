@@ -5,12 +5,10 @@
 <style>
 
     input {
-        border-radius: 22px;
-        border-color: rgba(0, 0, 0, 0.087);
-        border-width: 1px;
+        border-color: rgba(223, 22, 22, 0.521);
+        border-width: 0;
         line-height: 3em;
-        display: block;
-        margin: 25px auto;
+       
     }
 
     .logo {
@@ -23,7 +21,7 @@
     button {
     display: inline-block;
     border: none;
-    border-radius: 3px;
+    border-radius: 2px;
     padding: 0.6rem 1rem;
     margin: 0 7px;
     text-decoration: none;
@@ -44,37 +42,71 @@
         justify-content: center;
     }
 
-    ul {
-        display: flex;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        font-family: sans-serif;
-        font-size: 14px;
-    }
-
     a {
         text-decoration: none;
         color: rgba(0, 0, 0, 0.822);
     }
+
+    .topnav {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        font-size: 13px;
+        align-items: center;
+    }
+
+    .topnav .spacer {
+        display: flex;
+        flex-basis: 600px;
+        flex-grow: 1;
+
+    }
+
+ul > li {
+    margin: 0.5em 0.5em 0 1em;
+}
+
+.searchrow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    /*flex: 0 0 50px;*/
+    border: 2px solid #c91b1b;
+    border-radius: 22px;
+   
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
 </style>     
 
 <body>
 
-<ul>
+<ul class="topnav">
     <li><a href="about.asp">About</a></li>
-    <li><a href="shop.asp">Shop</a></li>
+    <li><a href="shop.asp">Store</a></li>
+    <li class="spacer"></li>
     <li><a href="gmail.asp">Gmail</a></li>
     <li><a href="images.asp">Images</a></li>
-    <li><a href="drive.asp">#</a></li>
-    <li><a href="signin"><button type="signin" id="signin" style="background: rgb(77, 128, 236); color: white; font-weight: bold;">Sign In</button></a></li>
+    <li><a href="drive.asp"><img src="grid.png" width="28px" height="28px"></a></li>
+    <li><a href="signin"><button type="signin" id="signin" style="background: #4285f4; font-size: 13px; padding: 0.5rem 0.8rem; color: white; font-weight: bold;">Sign In</button></a></li>
 </ul>
 
    <div class="logo">
     <img src="googlelogo_color.png">
    </div> 
 
-    <div>  <input type="search" size=65 title="Search" required> </div>
+    <div style="display: flex; height: 200px; align-items: center; justify-content: center">
+        <div class="searchrow" style="width: 600px">  
+           <img src="glass.png" width="28px" height="28px">
+           <input type="search" size=65 title="Search" required> 
+        </div>
+    </div>
     
         <div class="searchbuttons b-center"> 
             <button type="search" id="searchbutton">Google Search</button>
