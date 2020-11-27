@@ -2,88 +2,7 @@
 
 <html>
 
-<style>
-
-    input {
-        border-color: rgba(223, 22, 22, 0.521);
-        border-width: 0;
-        line-height: 3em;
-       
-    }
-
-    .logo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 100px;
-    }
-
-    button {
-    display: inline-block;
-    border: none;
-    border-radius: 2px;
-    padding: 0.6rem 1rem;
-    margin: 0 7px;
-    text-decoration: none;
-    background: rgb(238, 238, 238);
-    color: rgba(0, 0, 0, 0.582);
-    font-size: 14px;
-    cursor: pointer;
-    text-align: center;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-
-    .searchbuttons {
-        display: flex;
-    }
-
-    .b-center {
-        justify-content: center;
-    }
-
-    a {
-        text-decoration: none;
-        color: rgba(0, 0, 0, 0.822);
-    }
-
-    .topnav {
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        font-family: sans-serif;
-        font-size: 13px;
-        align-items: center;
-    }
-
-    .topnav .spacer {
-        display: flex;
-        flex-basis: 600px;
-        flex-grow: 1;
-
-    }
-
-ul > li {
-    margin: 0.5em 0.5em 0 1em;
-}
-
-.searchrow {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    /*flex: 0 0 50px;*/
-    border: 2px solid #c91b1b;
-    border-radius: 22px;
-   
-}
-
-textarea:focus, input:focus{
-    outline: none;
-}
-
-</style>     
+<link href="StyleSheet.css" rel="stylesheet">
 
 <body>
 
@@ -101,10 +20,11 @@ textarea:focus, input:focus{
     <img src="googlelogo_color.png">
    </div> 
 
-    <div style="display: flex; height: 200px; align-items: center; justify-content: center">
-        <div class="searchrow" style="width: 600px">  
-           <img src="glass.png" width="28px" height="28px">
-           <input type="search" size=65 title="Search" required> 
+    <div style="display: flex; height: 100px; align-items: center; justify-content: center">
+        <div class="searchrow" style="width: 475px">  
+           <img src="glass.png" width="28px" height="28px" style="border-radius: 20px; margin-left: 10px;">
+           <input type="search" size=50 title="Search" required> 
+           <img src="mic.png" width="22px" height="33px" style="border-radius: 20px; margin-left: 32px;">
         </div>
     </div>
     
@@ -113,6 +33,17 @@ textarea:focus, input:focus{
             <button type="firstresult" id="luckybutton">I'm Feeling Lucky</button> 
         </div>
     
+        <ul class="bottomnav">
+            <li><a href="about.asp">Advertising</a></li>
+            <li><a href="shop.asp">Business</a></li>
+            <li><a href="gmail.asp">How Search works</a></li>
+            <li class="spacer"></li>
+            
+            <li><a href="images.asp">Privacy</a></li>
+            <li><a href="drive.asp">Terms</a></li>
+            <li><a href="signin">Settings</button></a></li>
+        </ul>
+
 
 </body>
 

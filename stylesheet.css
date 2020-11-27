@@ -1,0 +1,101 @@
+input {
+    border-color: rgba(0, 0, 0, 0.164);
+    border-width: 0;
+    line-height: 3em;
+   margin-left: 10px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+button {
+display: inline-block;
+border: none;
+border-radius: 2px;
+padding: 0.6rem 1rem;
+margin: 0 7px;
+text-decoration: none;
+background: rgb(238, 238, 238);
+color: rgba(0, 0, 0, 0.582);
+font-size: 14px;
+cursor: pointer;
+text-align: center;
+-webkit-appearance: none;
+-moz-appearance: none;
+}
+
+.searchbuttons {
+    display: flex;
+}
+
+.b-center {
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.822);
+}
+
+.topnav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 13px;
+    align-items: center;
+}
+
+.bottomnav {
+    display: flex;
+    background: lightgray;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 13px;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+}
+
+.topnav .spacer {
+    display: flex;
+    flex-basis: 600px;
+    flex-grow: 1;
+}
+
+.bottomnav .spacer {
+    display: flex;
+    flex-basis: 600px;
+    flex-grow: 1;
+
+}
+
+ul > li {
+margin: 0.5em 0.5em 0 1em;
+/*padding: 0 0 5px 0;*/
+}
+
+.searchrow {
+display: flex;
+flex-direction: row;
+/*flex-wrap: wrap;*/
+align-items: center;
+/*flex: 0 0 50px;*/
+border: 1px solid #00000021;
+border-radius: 22px;
+
+}
+
+textarea:focus, input:focus{
+outline: none;
+}
